@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".time.TimesActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="TIME A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/inputTimeB"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="Chicago Bulls"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="@+id/inputTimeA"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <Button
+        android:id="@+id/btIniciarJogo"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="Iniciar Jogo"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="@+id/inputTimeB"
+        app:layout_constraintTop_toBottomOf="@+id/inputTimeB" />
+
+    <Button
+        android:id="@+id/btNovoJogo"
+        android:layout_width="363dp"
+        android:layout_height="wrap_content"
+        android:text="Novo Jogo"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/btIniciarJogo" />
+
+    <EditText
+        android:id="@+id/inputTimeA"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Lakers"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="TIME B"
+        app:layout_constraintEnd_toEndOf="@+id/inputTimeA"
+        app:layout_constraintStart_toStartOf="@+id/inputTimeA"
+        app:layout_constraintTop_toBottomOf="@+id/inputTimeA" />
+
+</android.support.constraint.ConstraintLayout>
